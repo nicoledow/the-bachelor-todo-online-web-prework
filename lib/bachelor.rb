@@ -6,9 +6,8 @@ def get_first_name_of_season_winner(data, season)
       contestant.each do |attribute, info|
         binding.pry
         if attribute == :status && info == "winner"
-          first_name =
           full_name_arr = data[season][contestant][:name].split(" ")
-          
+          first_name = full_name_arr[0]
           return first_name
         end
       end
