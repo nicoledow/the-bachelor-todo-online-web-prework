@@ -4,7 +4,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |season, list_of_contestants|
     if season.to_s == season
       list_of_contestants.each do |contestant_data_set, data|
-        if contestant_data_set[:status] == ""
+        if contestant_data_set[:status] == "Winner"
           
         end
       end
