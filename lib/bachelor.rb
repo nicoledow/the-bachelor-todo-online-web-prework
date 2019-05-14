@@ -5,9 +5,7 @@ def get_first_name_of_season_winner(data, season_number)
     if season.to_s == season_number
       list_of_contestants.each do |contestant|        
         if contestant["status"] == "Winner"
-          full_name_arr = contestant["name"].split(" ")
-          first_name = full_name_arr[0]
-          return first_name
+          return contestant["name"].split(" ").first
         end
       end
       return "No Winner"
