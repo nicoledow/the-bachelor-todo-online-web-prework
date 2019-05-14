@@ -6,6 +6,7 @@ def get_first_name_of_season_winner(data, season)
       list_of_contestants.each do |contestant_data_set, data|
         if contestant_data_set["status"] == "Winner"
           full_name_arr = [contestant_data_set]["name"].split(" ")
+          binding.pry
           first_name = full_name_arr[0]
           return first_name
         end
