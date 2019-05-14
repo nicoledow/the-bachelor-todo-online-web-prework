@@ -18,7 +18,9 @@ end
 
 def get_contestant_name(data, occupation)
   data.each do |season, array_of_contestants|
-    binding.pry
+    array_of_contestants.each do |contestant|
+      binding.pry
+    end
   end
 end
 
