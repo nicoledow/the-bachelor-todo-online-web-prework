@@ -62,6 +62,6 @@ def get_average_age_for_season(data, season_number)
     end
   end
   
-  average_age = sum_of_ages / contestant_list.size
+  average_age = (sum_of_ages / contestant_list.size).round
   return average_age
 end
