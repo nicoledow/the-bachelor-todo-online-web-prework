@@ -53,7 +53,6 @@ end
 def get_average_age_for_season(data, season_number)
   sum_of_ages = 0
   contestant_list = data[season_number.to_s]
-  binding.pry
   
   data.each do |season, array_of_contestants|
     if season == season_number
@@ -63,6 +62,6 @@ def get_average_age_for_season(data, season_number)
     end
   end
   
-  average_age = sum_of_ages / array_of_contestants.size
+  average_age = sum_of_ages / contestant_list.size
   return average_age
 end
