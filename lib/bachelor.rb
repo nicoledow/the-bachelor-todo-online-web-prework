@@ -4,8 +4,8 @@ def get_first_name_of_season_winner(data, season_number)
   data.each do |season, array_of_contestant_objs|
     if season.to_s == season_number
       array_of_contestant_objs.each do |contestant_hash|        
-        if contestant_hash[:status] == "Winner"
-          return contestant_hash[:name].split(' ').first
+        if contestant_hash["status"] == "Winner"
+          return contestant_hash["name"].split(' ').first
         end
       end
       return "No Winner"
