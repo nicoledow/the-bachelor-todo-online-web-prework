@@ -10,6 +10,7 @@ def get_first_name_of_season_winner(data, season)
           return first_name
         end
       end
+      return "No winner"
     end
   end
 end
